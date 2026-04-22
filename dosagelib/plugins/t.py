@@ -333,6 +333,8 @@ class TwinDragons(WordPressScraper):
     url = 'http://www.twindragonscomic.com/'
     stripUrl = url + 'comic/%s/'
     firstStripUrl = stripUrl % 'the-beginning'
+    imageSearch = '//div[@id="comic"]//img'
+    textSearch = imageSearch + '/@title'
     multipleImagesPerStrip = True
 
 
